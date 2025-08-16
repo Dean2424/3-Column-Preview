@@ -1,0 +1,207 @@
+:root {
+    --gold-500: hsl(31, 77%, 52%);
+    --cyan-800: hsl(184, 100%, 22%);
+    --green-950: hsl(179, 100%, 13%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 7rem auto;
+    min-width: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.preview-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Big Shoulders', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFF;
+    margin-top: 3rem;
+    margin-left: 2.4rem;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    width: 69%;
+    color: #FFF;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+    margin-left: 2.4rem;
+}
+
+.sedan-container {
+    width: 19.2rem;
+    height: 31.25rem;
+    background-color: var(--gold-500);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.sedan-img {
+    width: 3.99469rem;
+    height: 2.5rem;
+    margin-top: 3rem;
+    margin-left: 2.4rem;
+}
+
+
+.suv-container {
+    width: 19.2rem;
+    height: 31.25rem;
+    background-color: var(--cyan-800);
+}
+
+.suv-img {
+    margin-top: 3rem;
+    margin-left: 2.4rem;
+}
+
+.luxury-container {
+    width: 19.2rem;
+    height: 31.25rem;
+    background-color: var(--green-950);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.luxury-car-img {
+    margin-top: 3rem;
+    margin-left: 2.4rem;
+}
+
+button {
+    width: 9.1875rem;
+    height: 3rem;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: var(--gold-500);
+    border-radius: 1.5625rem;
+    border: none;
+    margin-top: 4rem;
+    margin-left: 2.4rem;
+    transition: .2s all ease-in;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+
+.gold {
+    color: var(--gold-500);
+}
+
+.gold:hover {
+    background-color: var(--gold-500);
+}
+
+.cyan {
+    color: var(--cyan-800);
+}
+
+.cyan:hover {
+    background-color: var(--cyan-800);
+}
+
+.green {
+    color: var(--green-950);
+}
+
+.green:hover {
+    background-color: var(--green-950);
+}
+
+@media screen and (max-width: 966px) {
+    .preview-container {
+        display: grid;
+    }
+
+    p {
+        width: 71%;
+        margin-bottom: -2rem;
+    }
+   
+    .sedan-container {
+        width: 38rem;
+        height: 25rem;
+        border-radius:  0.5rem 0.5rem 0 0;
+    }
+
+    .sedan-img {
+        margin-bottom: -1rem;
+    }
+
+    .suv-container {
+        width: 38rem;
+        height: 25rem;
+    }
+
+    .suv-text {
+        width: 71%;
+    }
+
+    .suv-img {
+        margin-bottom: -1rem;
+    }
+
+    .luxury-container {
+        width: 38rem;
+        height: 25rem;
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+
+    .luxury-car-img {
+        margin-bottom: -1rem
+    }
+
+    .luxury-text {
+        width: 71%;
+    }
+}
+
+@media screen and (max-width: 616px) {
+
+    .preview-container {
+        display: grid;
+    }
+
+    .sedan-container {
+       width: 20.4rem; 
+       height: 27rem;
+       align-items: center;
+       justify-content: center;
+       margin: 0 auto;
+    }
+
+    .suv-container {
+        width: 20.4rem; 
+        height: 27rem;
+       align-items: center;
+       justify-content: center;
+       margin: 0 auto;
+    }
+
+    .luxury-container {
+        width: 20.4rem; 
+        height: 27rem;
+       align-items: center;
+       justify-content: center;
+       margin: 0 auto;
+    }
+}
+
